@@ -14,3 +14,4 @@ To spinup a working EKS CLuster, do the following:
 #Note that you can only access the CLuster using the account that was used to create it hence the need to create new users and roles by creating a ClusterRole and ClusterRoleBinding then you create the equivalent JSON on IAM GUI on AWS.
 
 7. Create an IAM group an attach policy to it.
+8. Create a user and add to the group
