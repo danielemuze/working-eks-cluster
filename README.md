@@ -11,4 +11,4 @@ To spinup a working EKS CLuster, do the following:
 
 6. you might be required to install kubectl on your machine before you can access the k8s cluster (sudo snap install kubectl --classic)
 
-#Note that you can only access the CLuster using the account that was used to create it hence the need to create new users and roles
+#Note that you can only access the CLuster using the account that was used to create it hence the need to create new users and roles by creating a ClusterRole and ClusterRoleBinding then you create the equivalent JSON on IAM GUI on AWS.
