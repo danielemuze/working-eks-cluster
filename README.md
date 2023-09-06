@@ -41,3 +41,10 @@ data:
   mapRoles: |
   
   **************** OTHER CONFIG PART *************************
+
+11. Create a kube config for the new user as in nos. 5 above
+#aws eks --region us-east-1 update-kubeconfig --name eks --profile eksdeveloper
+
+12. Check the profile being used to access the cluster using the command below:
+#kubectl config view --minify
+
