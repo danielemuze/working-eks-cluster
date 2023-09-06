@@ -3,7 +3,7 @@
 To spinup a working EKS CLuster, do the following:
 1. copy all .tf files into  directory
 2. create your AWS IAM Role with programmatic access and save Secret Key ID and Access Key
-3. run "aws configure" on your Terraform machine and input all the neccessary details
+3. run "aws configure --profile terraform" on your Terraform machine and input all the neccessary details
 4. run terraform init, plan and apply
 
 
@@ -15,3 +15,5 @@ To spinup a working EKS CLuster, do the following:
 
 7. Create an IAM group an attach policy to it.
 8. Create a user and add to the group
+9. Use the Secret Key and ID for user to generate an EKS profile as in nos. 3 above
+10. Edit ConfigMap using the Admin credential #kubectl edit -n kube-system configmap/aws-auth
