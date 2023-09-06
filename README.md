@@ -25,4 +25,19 @@ mapUsers: |
     - <name of the group in the RBAC.yml file>
 Then save.
 
-My own example of this file would be as below
+My own example of this file would be as below:
+
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+data:
+  mapUsers: |
+    - usernarn: arn:aws:iam::287259957274:user/eksdeveloper
+      username: eksdeveloper
+      groups:
+      - reader
+  mapRoles: |
+  
+  **************** OTHER CONFIG PART *************************
