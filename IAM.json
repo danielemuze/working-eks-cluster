@@ -12,7 +12,7 @@
 			    "ssm:GetParameter",
 			    "eks:ListUpdates",
 			    "eks:ListFargateProfiles"],
-			"Resource": []
+			"Resource": "*"
 		}
 	]
 }
