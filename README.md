@@ -19,18 +19,18 @@ To spinup a working EKS CLuster, do the following:
 10. Edit ConfigMap using the Admin credential (#kubectl edit -n kube-system configmap/aws-auth) then add then add the entry for the EKS Developer RBAC.
 
 mapUsers: |
-  - userarn: <arn for user created in IAM>
-    username: <username of choice>
+  - userarn: #arn for user created in IAM
+    username: #username of choice
     groups:
-    - <name of the group in the RBAC.yml file>
+    - #name of the group in the RBAC.yml file
 Then save.
 
 My own example of this file would be as below:
 
-# Please edit the object below. Lines beginning with a '#' will be ignored,
-# and an empty file will abort the edit. If an error occurs while saving this file will be
-# reopened with the relevant failures.
-#
+## Please edit the object below. Lines beginning with a '#' will be ignored,
+## and an empty file will abort the edit. If an error occurs while saving this file will be
+## reopened with the relevant failures.
+
 apiVersion: v1
 data:
   mapUsers: |
